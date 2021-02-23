@@ -18,12 +18,9 @@ function Grid(props){
   var children = props.data.children;
 
   var gridStyle={
-    display: "grid",
     gridTemplateColumns: `repeat(${data.gridSize.width},1fr)`,
     gridTemplateRows: `repeat(${data.gridSize.height},1fr)`,
     backgroundColor: data.backgroundColor,
-    height: "100%",
-    width: "100%"
   };
 
   if(data.size){
@@ -37,7 +34,7 @@ function Grid(props){
   }
 
   return(
-      <div style={gridStyle}>
+      <div className="grid" style={gridStyle}>
         {children?
           children.map(function(child){
             if(child.type === "grid"){

@@ -9,3 +9,9 @@ body {
 .App{
   height:100%;
 }
+
+.grid{
+  display:grid;
+  height:100%;
+  width:100%;
+}
